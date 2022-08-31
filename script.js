@@ -10,10 +10,10 @@ function generatorPassword() {
     }
     document.getElementById("password").value = password
 }
+
 function copyPassword() {
     var copyText = document.getElementById('password')
     copyText.select()
-    copyText.selectSelectionRange(0, 999)
-    document.exitCommand('copy')
-    alert("copied")
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand('copy')
 }
